@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+
+.btn_login {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #5cb85c;
+  padding: 10px 40px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+}
+
+.btn_login span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn_login:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #007b5e;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn_login:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px;
+}
